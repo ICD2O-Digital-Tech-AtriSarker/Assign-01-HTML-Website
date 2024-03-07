@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to bottom, rgba(2,0,36,1) 0%, rgba(60,84,82,1) 47%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(to bottom, rgba(2, 0, 36, 1) 0%, rgba(60, 84, 82, 1) 47%, rgba(0, 0, 0, 1) 100%);
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -11,7 +11,7 @@ body {
 
 /* Rainbow Title */
 .rainbow_text_animated {
-  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -21,12 +21,14 @@ body {
 }
 
 @keyframes rainbow_animation {
-  0%,100% {
-      background-position: 0 0;
+
+  0%,
+  100% {
+    background-position: 0 0;
   }
 
   50% {
-      background-position: 100% 0;
+    background-position: 100% 0;
   }
 }
 
@@ -42,32 +44,32 @@ h1 {
 .game_link {
   user-select: none;
   display: inline-block;
-  width:calc(20% + 80px);
+  width: calc(20% + 80px);
   aspect-ratio: 16/9;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   padding: 4px;
   margin-left: calc(0.5% + 2px);
   margin-right: calc(0.5% + 2px);
   margin-bottom: 5px;
   margin-top: 5px;
   text-align: center;
-  background: linear-gradient(to right, rgba(255,0,0,0.1), rgba(0,255,0,0.1) , rgba(0,0,255,0.1) );
+  background: linear-gradient(to right, rgba(255, 0, 0, 0.1), rgba(0, 255, 0, 0.1), rgba(0, 0, 255, 0.1));
   animation: rainbow_animation 7s ease-in-out infinite;
   background-size: 400% 100%;
 
   /* text */
-  color: rgba(55,255,255,0.4);
+  color: rgba(55, 255, 255, 0.4);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   font-weight: bold;
 }
 
 .game_link:hover {
-  color: rgba(255,255,255,0.9);
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.7);
+  color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
 }
 
 .game_image {
-  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
   border: solid 4px;
   display: inline-block;
   width: 90%;

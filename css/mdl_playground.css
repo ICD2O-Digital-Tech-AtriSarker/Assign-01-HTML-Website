@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to right,#555,#000);
+  background: linear-gradient(to right, #555, #000);
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -10,7 +10,7 @@ body {
 }
 
 img {
-  width:60%;
+  width: 60%;
   height: 30%;
   aspect-ratio: 16/9;
   border: solid 4px;

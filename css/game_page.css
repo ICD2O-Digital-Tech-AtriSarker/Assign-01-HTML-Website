@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to bottom, rgba(2,0,24,1) 0%, rgba(60,124,82,1) 47%, rgba(0,21,0,1) 100%);
+  background: linear-gradient(to bottom, rgba(2, 0, 24, 1) 0%, rgba(60, 124, 82, 1) 47%, rgba(0, 21, 0, 1) 100%);
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -11,7 +11,7 @@ body {
 
 /* Rainbow Title */
 .rainbow_text_animated {
-  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -21,12 +21,14 @@ body {
 }
 
 @keyframes rainbow_animation {
-  0%,100% {
-      background-position: 0 0;
+
+  0%,
+  100% {
+    background-position: 0 0;
   }
 
   50% {
-      background-position: 100% 0;
+    background-position: 100% 0;
   }
 }
 
@@ -34,7 +36,7 @@ h1 {
   text-align: left;
   text-decoration: underline;
   font-size: 22px;
-  font-family: monospace; 
+  font-family: monospace;
   letter-spacing: 5px;
   margin-left: 2px;
   user-select: none;
@@ -45,22 +47,22 @@ a {
 }
 
 #MakeCodeElement {
-  height:150vh;
-  width:50%;
-  overflow:hidden;
+  height: 150vh;
+  width: 50%;
+  overflow: hidden;
   display: inline-block;
 }
 
 #MakeCodeGameFrame {
-  left:0;
-  top:0;
-  width:100%;
-  height:9999px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 9999px;
   display: block;
 }
 
 #infoDiv {
-  background: linear-gradient(to right, rgba(255,0,0,0.1), rgba(0,255,0,0.1) , rgba(0,0,255,0.1) );
+  background: linear-gradient(to right, rgba(255, 0, 0, 0.1), rgba(0, 255, 0, 0.1), rgba(0, 0, 255, 0.1));
   animation: rainbow_animation 7s ease-in-out infinite;
   background-size: 400% 100%;
 
@@ -75,7 +77,7 @@ a {
 }
 
 .infoImg {
-  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
   border: solid 4px;
   display: inline-block;
   width: 40%;
