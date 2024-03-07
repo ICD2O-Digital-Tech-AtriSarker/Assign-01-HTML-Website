@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+  Header Comment
+
+  Author: Atri Sarker
+  Description: Gamehub gamepage for MDL components.
+  Last Updated: March 3rd, 2023
+-->
+<html lang="en">
+
+<head>
+
+  <!-- Metadata -->
+  <meta charset="utf-8">
+  <meta name="description" content="MDL Playground - MDL component showcase - On Game Hub">
+  <meta name="keywords"
+    content="immaculata, icd2o, games, game, webgames, html, gamesite, mdl, showcase, playground, sandbox">
+  <meta name="author" content="Atri Sarker">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>MDL Playground - Gamehub</title>
+
+  <!-- CSS -->
+  <link href="./../css/mdl_playground.css" rel="stylesheet" type="text/css" />
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./../favicon/favicon-16x16.png">
+  <link rel="manifest" href="./../favicon/site.webmanifest">
+
+  <!-- MDL -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+
+<body>
+  <!-- MDL Layout -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+    <!-- Header bar -->
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">MDL Playground - Gamehub</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. Hidden in in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="../index.html">Home</a>
+          <a class="mdl-navigation__link" href="./flappy_duck.html">Flappy Duck</a>
+          <a class="mdl-navigation__link" href="./roadkill.html">Roadkill Simulator</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Navigation Drawer -->
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">MDL Playground</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="../index.html">Home</a>
+        <a class="mdl-navigation__link" href="./flappy_duck.html">Flappy Duck</a>
+        <a class="mdl-navigation__link" href="./roadkill.html">Roadkill Simulator</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+
+        <!-- JS script -->
+        <script>
+          // function that changes button color
+          function ChangeColor() {
+            var colorButton = document.getElementById("color-change-button");
+            // I got this randomColor generator from the internet, it works by generating random 6 digit Hex code
+            var randomColor = Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+            colorButton.style.backgroundColor = "#" + randomColor;
+          }
+
+          // function that does JS alert
+          function ButtonAlert() {
+            alert("This is a JS Alert!");
+          }
+
+          // function that changes Image
+          function ChangeImage(ref) {
+            var ImageTag = document.getElementById("RadioImage");
+            ImageTag.src = ref;
+          }
+
+        </script>
+        <!-- Button --> <!-- Changes Color on Click -->
+        <button id="color-change-button" onclick="ChangeColor()">
+          Button that changes color on Click
+        </button>
+
+        <!-- Raised button --> <!-- JS Alert on Click -->
+        <button onclick="ButtonAlert()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+          Button that does JS Alert On Click
+        </button>
+
+        <!-- Colored text that discusses topic and is large enough to read! -->
+        <p>
+          This is where all the MDL components were hiding!
+        </p>
+
+        <!-- Image -->
+        <img id="RadioImage" src="../images/games/RoadkillSimLogo.PNG">
+        <br>
+        <h4>Radio Buttons for Logos</h4>
+        <!-- Radio Buttons --> <!-- Changes image on selection -->
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+          <input onclick="ChangeImage('../images/games/RoadkillSimLogo.PNG')" type="radio" id="option-1"
+            class="mdl-radio__button" name="options" value="1" checked>
+          <span class="mdl-radio__label">Roadkill Simulator</span>
+        </label>
+        <br>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+          <input onclick="ChangeImage('../images/games/AstroPhysicsLogo.PNG')" type="radio" id="option-2"
+            class="mdl-radio__button" name="options" value="2">
+          <span class="mdl-radio__label">Astro Physics</span>
+        </label>
+        <br>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+          <input onclick="ChangeImage('../images/games/FlappyDuckLogo.png')" type="radio" id="option-3"
+            class="mdl-radio__button" name="options" value="3">
+          <span class="mdl-radio__label">Flappy Duck</span>
+        </label>
+        <br>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
+          <input onclick="ChangeImage('../images/games/RomIsSurvivorLogo.PNG')" type="radio" id="option-4"
+            class="mdl-radio__button" name="options" value="4">
+          <span class="mdl-radio__label">Romeo is a Survivor</span>
+        </label>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

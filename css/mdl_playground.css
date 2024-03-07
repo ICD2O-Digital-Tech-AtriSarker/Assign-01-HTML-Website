@@ -1,0 +1,21 @@
+body {
+  background: linear-gradient(to right,#555,#000);
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+img {
+  width:60%;
+  height: 30%;
+  aspect-ratio: 16/9;
+  border: solid 4px;
+}
+
+p {
+  font-size: 48px;
+}
